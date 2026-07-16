@@ -8,7 +8,7 @@
 * Run `make submit` to create the pg_dump file and `src/` tarball and commit the
   created artifacts.
 
-  ### Domain Overview
+### Domain Overview
 
 This exercise builds a system to track parts orders for truck components. The company previously relied on a legacy ordering system and the only remaining data is in the `/data` folder as extracts.
 
