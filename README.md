@@ -1,5 +1,4 @@
-# Truck Manufacturer Project
-## Batch and Streaming Data
+# Truck Manufacturer Project: Batch and Streaming Data
 
 ## Quickstart
 * Develop and test your solution
