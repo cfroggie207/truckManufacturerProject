@@ -104,10 +104,10 @@ Most of the setup can be done via Make targets.  Here is a list of the relevant 
 * `make ingest` - builds the solution image from the `/src` folder and runs it using docker-compose. WARNING: This will recycle the database
 * `make submit` - creates the tarballs for submission in the `/submission` directory
 
-Your ingestion script's entrypoint is in the method `ingest_data()` in `src/ingest.py`.
+The ingestion script's entrypoint is in the method `ingest_data()` in `src/ingest.py`.
 
-### Testing your solution
+### Testing solution
 
-Tests for the solution in the `/src/tests.py` file.  The default way these are implemented are using pytest, which will run any method that begins with `test`.  To run the tests, you can run `make run-tests` from the parent directory or `python -m pytest tests.py` from `src/`.
+Tests for the solution in the `/src/tests.py` file.  The default way these are implemented are using pytest, which will run any method that begins with `test`.  To run the tests, run `make run-tests` from the parent directory or `python -m pytest tests.py` from `src/`.
 
-It is recommended for you to run an end-2-end test using docker compose.  This will tear down and rebuild the postgres database from scratch and run ingestion using the solution image.  You can run this test with `make ingest`, which will also save the logs from the ingestion container to `solution_logs.txt`.  There is a logging system included, so please make use of the logger to put relevant information into the `solution_logs.txt`
+It is recommended to run an end-2-end test using docker compose.  This will tear down and rebuild the postgres database from scratch and run ingestion using the solution image.  You can run this test with `make ingest`, which will also save the logs from the ingestion container to `solution_logs.txt`.  There is a logging system included, so please make use of the logger to put relevant information into the `solution_logs.txt`
